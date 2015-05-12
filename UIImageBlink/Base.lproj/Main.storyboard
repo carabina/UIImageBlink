@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J7H-KV-ksF" customClass="UIImageBlink">
+                                <rect key="frame" x="200" y="250" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Mqx-9m-63b"/>
+                                    <constraint firstAttribute="height" constant="100" id="cyX-ww-mn7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evb-Ks-ri4">
+                                <rect key="frame" x="260" y="20" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6Ae-3c-bKH"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ipq-wq-RJX"/>
+                                </constraints>
+                                <state key="normal" title="alternate">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alternatePress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOD-Mw-ZSP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-L2-1JS">
+                                <rect key="frame" x="260" y="58" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="RuZ-Ga-Iuc"/>
+                                    <constraint firstAttribute="height" constant="30" id="v8u-vd-yEy"/>
+                                </constraints>
+                                <state key="normal" title="pulse">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pulsePress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHP-md-evb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1az-SW-JM0">
+                                <rect key="frame" x="260" y="96" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0DG-qa-myD"/>
+                                    <constraint firstAttribute="width" constant="80" id="Kem-mc-nAG"/>
+                                </constraints>
+                                <state key="normal" title="90 / 10">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flash90_10Press:" destination="BYZ-38-t0r" eventType="touchUpInside" id="itM-Yy-6zf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WA-ff-ku9">
+                                <rect key="frame" x="260" y="134" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="nY1-kx-LtW"/>
+                                    <constraint firstAttribute="height" constant="30" id="qax-gq-09y"/>
+                                </constraints>
+                                <state key="normal" title="left flash">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftOnlyPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mgo-jz-vbs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4c2-yt-Iqo">
+                                <rect key="frame" x="260" y="172" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="0PJ-K1-Sb2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Bbu-US-ptV"/>
+                                    <constraint firstAttribute="height" constant="30" id="XJh-xZ-NMJ"/>
+                                    <constraint firstAttribute="width" constant="80" id="dJr-bQ-o26"/>
+                                </constraints>
+                                <state key="normal" title="fast flash">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fastFlash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oQf-o5-faO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be4-14-Bnj">
+                                <rect key="frame" x="260" y="550" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="82E-e3-dLt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="9LX-K8-eXj"/>
+                                    <constraint firstAttribute="width" constant="80" id="i6S-iU-aUF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="uIf-rC-KbQ"/>
+                                </constraints>
+                                <state key="normal" title="slow flash">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="slowFlash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V9a-E0-8Ea"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvc-9o-40h">
+                                <rect key="frame" x="260" y="512" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="6Bm-bH-GOv"/>
+                                    <constraint firstAttribute="width" constant="80" id="HBh-Ue-VWf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="M7r-sJ-YDn"/>
+                                    <constraint firstAttribute="height" constant="30" id="hWr-gP-B9s"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="nrZ-hG-zJS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="shu-z0-5I0"/>
+                                </constraints>
+                                <state key="normal" title="right flash">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightOnlyPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JWF-gH-KCK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="be4-14-Bnj" firstAttribute="top" secondItem="uvc-9o-40h" secondAttribute="bottom" constant="8" id="2sg-0R-1az"/>
+                            <constraint firstItem="1az-SW-JM0" firstAttribute="top" secondItem="DMo-L2-1JS" secondAttribute="bottom" constant="8" id="AjG-wY-CFs"/>
+                            <constraint firstItem="0WA-ff-ku9" firstAttribute="top" secondItem="1az-SW-JM0" secondAttribute="bottom" constant="8" id="Cwp-lr-9wy"/>
+                            <constraint firstAttribute="centerX" secondItem="1az-SW-JM0" secondAttribute="centerX" id="FoT-3W-n9N"/>
+                            <constraint firstAttribute="centerX" secondItem="0WA-ff-ku9" secondAttribute="centerX" id="IlT-rG-PBy"/>
+                            <constraint firstAttribute="centerX" secondItem="be4-14-Bnj" secondAttribute="centerX" id="Lsj-wV-1ef"/>
+                            <constraint firstItem="DMo-L2-1JS" firstAttribute="top" secondItem="evb-Ks-ri4" secondAttribute="bottom" constant="8" id="SbI-iu-JqR"/>
+                            <constraint firstItem="4c2-yt-Iqo" firstAttribute="top" secondItem="0WA-ff-ku9" secondAttribute="bottom" constant="8" id="WrW-e2-lxZ"/>
+                            <constraint firstAttribute="centerX" secondItem="DMo-L2-1JS" secondAttribute="centerX" id="YxB-Fs-n7m"/>
+                            <constraint firstAttribute="centerX" secondItem="uvc-9o-40h" secondAttribute="centerX" id="e8h-kU-eRF"/>
+                            <constraint firstAttribute="centerX" secondItem="4c2-yt-Iqo" secondAttribute="centerX" id="fQF-vt-qTb"/>
+                            <constraint firstAttribute="centerY" secondItem="J7H-KV-ksF" secondAttribute="centerY" id="h60-Nh-GAu"/>
+                            <constraint firstAttribute="centerX" secondItem="evb-Ks-ri4" secondAttribute="centerX" id="ih3-Jn-jYX"/>
+                            <constraint firstItem="evb-Ks-ri4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ihp-Ur-NKK"/>
+                            <constraint firstAttribute="centerX" secondItem="J7H-KV-ksF" secondAttribute="centerX" id="m9R-Zk-VHN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="be4-14-Bnj" secondAttribute="bottom" constant="20" id="tZ0-i1-elw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myBlinker" destination="J7H-KV-ksF" id="OuA-qb-0Me"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
